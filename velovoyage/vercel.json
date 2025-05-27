@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/velovoyage/index.html" },
+      { "source": "/(.*)", "destination": "/velovoyage/index.html" }
+    ]
+  }
+  
