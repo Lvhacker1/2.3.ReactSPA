@@ -1,0 +1,22 @@
+.container {
+    padding: 10px;
+    margin: 0;
+}
+
+.pageTitle {
+    color: var(--darkFontColor);
+    font-size: var(--fontH1);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .pageTitle {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        padding: 10px 20px;
+    }
+}

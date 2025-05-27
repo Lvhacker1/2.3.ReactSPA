@@ -1,0 +1,77 @@
+.hotelForm {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px;
+}
+
+.formGroup {
+    width: 100%;
+} 
+
+.inlineGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border: 0.1px solid rgb(200, 200, 200);
+    color: var(--lightFontColor);
+    height: 40px;
+}
+
+.firstInput {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.button {
+    width: 100%;
+    border: 0.1px solid rgb(200, 200, 200);
+    background-color: white;
+    color: var(--lightFontColor);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+}
+
+@media screen and (min-width: 1000px) {
+    .hotelForm {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .formInput {
+        border-right: 1px solid #e6e6e7;
+        width: 130px;
+    }
+
+    .formGroup {
+        width: auto;
+    }
+
+    .firstInput {
+        border-radius: 0%;
+        width: 190px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .button {
+        border-radius: 0%;
+        border-right: 1px solid #e6e6e7;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    button:hover {
+        background-color: var(--lightHover);
+        border: 0.1px solid #9eab9d;
+    }
+}
+

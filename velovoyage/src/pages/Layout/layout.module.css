@@ -1,0 +1,39 @@
+.pageContainer {
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 500px) {
+    .pageContainer {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .pageContainer {
+        padding: 0px 70px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .pageContainer {
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .pageContainer {
+        padding: 0px 130px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .page {
+       display: none;
+    }
+}
+
+
+
+
+
+

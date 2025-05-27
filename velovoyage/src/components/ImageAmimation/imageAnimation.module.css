@@ -1,0 +1,99 @@
+.imageContainer {
+    position: relative;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 8/4;
+    max-height: 500px;
+    display: block;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 10px;
+}
+
+.overlayContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 210px;
+}
+
+.title {
+    font-size: var(--fontH2);
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.button {
+    background-color: #fb923c;
+    color: white;
+    border: none;
+    font-size: var(--fontButton);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.button:hover {
+    background-color: #f97316;
+}
+
+@media screen and (min-width: 500px) {
+    .imageContainer {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: 23vw;
+        padding: 40px 20px;
+    }
+
+    .content {
+        margin-top: -25vw;
+    }
+
+    .image {
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .imageContainer {
+        margin-left: -70px;
+        margin-right: -70px;
+        padding: 50px 70px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .imageContainer {
+        margin-left: -100px;
+        margin-right: -100px;
+        padding: 70px 100px;
+    }
+
+    .overlayContent {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .imageContainer {
+        margin-left: -150px;
+        margin-right: -150px;
+        padding: 80px 150px;
+    }
+}

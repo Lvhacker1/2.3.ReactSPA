@@ -1,0 +1,110 @@
+.travelForm {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px;
+}
+
+.inlineGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+.formGroup {
+    width: 100%;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border: 0.1px solid rgb(200, 200, 200);
+    color: var(--lightFontColor);
+    height: 40px;
+}
+
+.firstInput {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.button {
+    width: 100%;
+    border: 0.1px solid rgb(200, 200, 200);
+    background-color: white;
+    color: var(--lightFontColor);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .travelForm {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .formGroup {
+        width: 100%;
+        flex: 1 1 0;
+    }
+
+    .formInput {
+        border-right: 1px solid #e6e6e7;
+        min-width: 125px;
+        width: 100%;
+    }
+
+    .firstInput {
+        border-radius: 0%;
+        min-width: 170px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .inlineGroup {
+        display: flex;
+        flex: 1 1 125px;
+        min-width: 270px;
+        max-width: 360px;
+    }
+
+    .passengerInput {
+        display: flex;
+        flex: 1 1 125px;
+        min-width: 125px;
+        max-width: 180px;
+    }
+
+    .button {
+        border-radius: 0%;
+        border-right: 1px solid #e6e6e7;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        max-width: 80px;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: var(--lightHover);
+        border: 0.1px solid #9eab9d;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .formInput {
+        width: 140px;
+    }
+
+    .firstInput {
+        width: 180px;
+    }
+
+}

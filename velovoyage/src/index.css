@@ -1,14 +1,54 @@
 * {
   box-sizing: border-box;
+  margin: 0 ;
+  padding: 0;
+  font-weight: normal;
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --body: whitesmoke;
+  --background-primary: #ffffff;
+  --background-secondary: #ebeff2;
+  --darkFontColor: #000000;
+  --mediumFontColor: #454545;
+  --lightFontColor: #777777;
+  --darkHover: #716f6f;
+  --mediumHover: #848584;
+  --lightHover: #a9a9a9;
+  --extraOne: #000000;
+  --extraTwo: #262626;
+  --GreyDark: #aeaeb2;
+  --mediumBorder: rgb(200, 200, 200);
+  --GreyLight: #f5f5f6;
+  --fontH1: clamp(1.5rem, 4vw, 2rem);
+  --fontH2: clamp(1rem, 4vw, 1.5rem);
+  --fontH3: clamp(0.9rem, 4vw, 1.25rem);
+  --fontH4: clamp(0.8rem, 4vw, 1rem);
+  --fontP: clamp(0.8rem, 4vw, 1.125rem);
+  --fontPSmall: clamp(0.7rem, 4vw, 1rem);
+  --fontButton: clamp(0.75rem, 4vw, 1rem);
+  --fontLarge: clamp(1.4rem, 4vw, 3rem);
 }
 
 body {
   margin: 0 ;
+  padding: 0;
+  background-color: var(--body);
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 300;
+}
+
+input,
+button {
+  font-family: "Asap Condensed", sans-serif;;
+}
+
+@media screen and (min-width: 1700px) {
+  body {
+    background-color: var(--mediumBackgroundColor);
+    background-image: url('../src/assets/111.bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 

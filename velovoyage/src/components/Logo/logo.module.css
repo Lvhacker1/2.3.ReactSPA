@@ -1,0 +1,13 @@
+.logoLink img {
+    transition: 0.2s;
+}
+
+.logoLink img:hover {
+    scale: 1.1;
+}
+
+@media screen and (min-width: 900px) {
+    .logoLink img {
+        height: 80px;
+    }
+}
